@@ -1,0 +1,138 @@
+.borde{
+	background-color: #40FF40;
+}
+
+header{
+	color:#fff;
+}
+#tituloIndex{
+	color:#20B2AA; margin-left: 47%;
+	
+}
+#EMD{
+	color:#20B2AA; margin-left: 40%;
+}
+
+
+img .inicio{
+	  width:12%;
+}
+.imagen{
+	margin-left: 27%;filter:alpha(opacity=100);
+	width:50%;
+	background:url(<?php echo URL;?>Imagenes\EMDlogoIndex.jpeg)
+}
+
+
+.ImgIndex{
+	margin-left: 25%;filter:alpha(opacity=45);
+	width:50%;
+	background:url(<?php echo URL;?>Imagenes\EMDlogoIndex.jpeg)
+}
+
+#titulo{/*nuevo*/
+	text-align: center;
+}
+
+.color1{
+	background:#20B2AA;
+	height: 5px;
+}
+/*nuevo*/
+footer.color1{
+	margin-top: 20px;
+	height: 50px;
+}
+
+.color2{
+	background:	#00cc00;
+}
+
+.direccion{
+	float:right;
+}
+/*nuevo*/
+aside{
+	margin-top: 45px;
+	background:	#00cc00;
+	color:#fff;
+	width: 100%;
+}
+
+footer{
+	background:	#00BFFF;
+	color:#fff;
+	font-size: 350%;
+}
+
+footer h3{
+	font-size: 150%;
+}
+
+#linea{
+	background:	#778899;
+	color:#fff;
+	width: 40000px;
+	font: #778899;
+}
+
+#misVis{
+	background-color:	#778899;
+	color:#fff;
+	width: 40000px;
+	font: #778899;
+}
+
+#vision{
+	background-color:	#00BFFF;
+	color:#fff;
+	width: 40000px;
+	font: #778899;
+}
+
+.mision{
+	background:	#fff;
+	  margin:0; 
+  padding:   30px;
+}
+
+.vision{
+background:	#fff;
+  margin:0; 
+  padding:   30px;
+}
+
+.somos{
+	background:	#fff;
+	margin:0; 
+  	padding:   30px;
+}
+
+#fechaNac{
+	margin-left: 20px;
+}
+#direccion{
+	margin-left: 20px;
+}
+#email{
+	margin-left: 20px;
+}
+
+#lugNa{
+	margin-left: 20px;
+}
+#gender{
+	margin-left: 20px;
+}
+
+
+.lista{
+	margin-left: 70%;
+	background-color: #F2F2F2;
+	height: 300px;
+
+}
+
+li {
+	color: black;
+}
