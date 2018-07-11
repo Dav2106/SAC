@@ -9,7 +9,7 @@
 
 		function loadModel($modulo){
 			$model = get_class($this).'Model';//significa que todos los modelos se llamaran ejm CarroModel
-			$path = $modulo.'/Models/'.$model.'.php';
+			$path = 'Models/'.$modulo.'/'.$model.'.php';
 
 			if(file_exists($path)){
 				require $path;
