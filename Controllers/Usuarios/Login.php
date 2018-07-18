@@ -1,17 +1,19 @@
 <?php
 
 Class Login extends Controller{
+
+		private $modulo = "Usuarios";
 	   
 	    public function __construct(){
-	   	 	parent::__construct($modulo = "Usuarios");
+	   	 	parent::__construct($this->modulo);
 	    }
 
 	    public function iniciarSesion(){
-	   		$this->view->render($modulo, $this, 'Login');
+	   		$this->view->render($this->modulo, $this, 'Login');
 	   	}
 
 	   	public function cambioContra(){
- 			$this->view->render($this,'CambioContra');
+ 			$this->view->render($this->modulo, $this,'CambioContra');
  		}
 
 	    public function AgregarCuenta(){
