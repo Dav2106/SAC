@@ -1,12 +1,14 @@
 <?php
 	Class Paciente extends Controller{
 		
+		private $modulo = "ExpedienteMedico";
+
 		function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrar(){
-			$this->view->render($this,'MostrarPacientes');
+			$this->view->render($this->modulo, $this,'MostrarPacientes');
 		}
 
 		public function AgregarPaciente(){

@@ -1,8 +1,11 @@
 <?php
 
 Class Hospitalizacion extends Controller{
-	function __construct(){
-			parent::__construct();
+
+		private $modulo = "ExpedienteMedico";
+
+		function __construct(){
+			parent::__construct($this->modulo);
 		}
 
 		public function AgregarHospitalizacion(){
@@ -83,9 +86,9 @@ Class Hospitalizacion extends Controller{
 			$id=$_SESSION['cedula'];
 			$this->view->Hospitalizacion = $diag = $this->model->BuscarObsHospi($id); 
 			if($sexo=='M'){
-				$this->view->render($this,'MostrarHospitalizacionM');
+				$this->view->render($this->modulo, $this,'MostrarHospitalizacionM');
 			}else{
-				$this->view->render($this,'MostrarHospitalizacion');
+				$this->view->render($this->modulo, $this,'MostrarHospitalizacion');
 			}				
 		}
 

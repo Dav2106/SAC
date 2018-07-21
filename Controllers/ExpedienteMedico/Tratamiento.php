@@ -2,8 +2,10 @@
 	
 	Class Tratamiento extends Controller{
 		
+		private $modulo = "ExpedienteMedico";
+
 		function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+			parent::__construct($this->modulo);
 		}
 		
 		public function mostrarHistorial(){
@@ -16,12 +18,10 @@
 			$sexo=$_SESSION['sexo'];
 			$this->view->Tratamiento = $tra = $this->model->BuscarDia($_SESSION['cedula']); 
 			if($sexo=='M'){
-				$this->view->render($this,'MostrarTratamientoM');
+				$this->view->render($this->modulo, $this,'MostrarTratamientoM');
 			}else{
-				$this->view->render($this,'MostrarTratamiento');
+				$this->view->render($this->modulo, $this,'MostrarTratamiento');
 			}
-				
-			
 		}
 		     
 		public function AgregarTratamiento(){

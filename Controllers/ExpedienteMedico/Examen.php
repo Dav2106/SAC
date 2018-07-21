@@ -1,8 +1,11 @@
 <?php
 
 Class Examen extends Controller{
-	function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+
+		private $modulo = "ExpedienteMedico";
+		
+		function __construct(){
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrarHistorial(){
@@ -15,9 +18,9 @@ Class Examen extends Controller{
 				$sexo=$_SESSION['sexo'];
 				$this->view->examenes = $diag = $this->model->BuscarDia($_SESSION['cedula']);
 				if($sexo=='M'){
-				$this->view->render($this,'MostrarExamenesM');
+				$this->view->render($this->modulo, $this,'MostrarExamenesM');
 			}else{
-				$this->view->render($this,'MostrarExamenes');
+				$this->view->render($this->modulo, $this,'MostrarExamenes');
 			}	
 		}
 
@@ -77,9 +80,9 @@ Class Examen extends Controller{
 			$sexo=$_SESSION['sexo'];
 			$this->view->examenes = $diag = $this->model->BuscarPend($_SESSION['cedula']);
 			if($sexo=='M'){
-				$this->view->render($this,'MostrarExamenesM');
+				$this->view->render($this->modulo, $this,'MostrarExamenesM');
 			}else{
-				$this->view->render($this,'MostrarExamenes');
+				$this->view->render($this->modulo, $this,'MostrarExamenes');
 			}
 		}
 

@@ -1,8 +1,11 @@
 <?php
 
 Class Diagnostico extends Controller{
-	function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+
+		private $modulo = "ExpedienteMedico";
+
+		function __construct(){
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrarDia($param){
@@ -17,9 +20,9 @@ Class Diagnostico extends Controller{
 				$_SESSION['sexo'] = $sexo;	
 				$this->view->diagnostico = $diag = $this->model->buscarRangoFecha($id);
 				if($_SESSION['sexo']=='M'){
-					$this->view->render($this,'MostrarDiagnosticoM');
+					$this->view->render($this->modulo, $this,'MostrarDiagnosticoM');
 				}else{
-					$this->view->render($this,'MostrarDiagnosticos');
+					$this->view->render($this->modulo, $this,'MostrarDiagnosticos');
 				}
 			}else{
 				echo "Error";

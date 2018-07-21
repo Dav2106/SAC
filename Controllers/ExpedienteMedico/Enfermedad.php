@@ -1,13 +1,15 @@
 <?php
 
 Class Enfermedad extends Controller{
-	function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+		private $modulo = "ExpedienteMedico";
+
+		function __construct(){
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrar(){
 			echo $this->CargarEnfermedades();
-			$this->view->render($this,'MostrarEnfermedades');
+			$this->view->render($this->modulo, $this,'MostrarEnfermedades');
 		}
 
 		public function AgregarEnfermedad(){

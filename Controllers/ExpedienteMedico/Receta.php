@@ -2,8 +2,10 @@
 	
 	Class Receta extends Controller{
 		
+		private $modulo = "ExpedienteMedico";
+
 		function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+			parent::__construct($this->modulo);
 		}		
 		          
 		public function AgregarReceta(){

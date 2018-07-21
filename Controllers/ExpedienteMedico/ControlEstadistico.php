@@ -1,11 +1,17 @@
 <?php
 
 Class ControlEstadistico extends Controller{
+	
+	private $modulo = "ExpedienteMedico";
+
+	function __construct(){
+		parent::__construct($this->modulo);
+	}
 
 	public function mostrar(){
 			session_start();
 			$this->CargarContEsta($_SESSION['cedula']);
-			$this->view->render($this,'ControlEstadistico');			
+			$this->view->render($this->modulo, $this,'ControlEstadistico');			
 	} 
 
 	public function CargarContEsta($id){

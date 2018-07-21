@@ -1,8 +1,11 @@
 <?php
 
 Class Patologia extends Controller{
-	function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+		
+		private $modulo = "ExpedienteMedico";
+
+		function __construct(){
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrarDia(){
@@ -10,9 +13,9 @@ Class Patologia extends Controller{
 			$sexo=$_SESSION['sexo'];
 			$this->view->patologia = $pat = $this->model->BuscarDia($_SESSION['cedula']); 
 			if($sexo=='M'){
-				$this->view->render($this,'MostrarPatologiasM');
+				$this->view->render($this->modulo, $this,'MostrarPatologiasM');
 			}else{
-				$this->view->render($this,'MostrarPatologias');
+				$this->view->render($this->modulo, $this,'MostrarPatologias');
 			}			
 		}
 
