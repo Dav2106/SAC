@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
-  header('location: '.URL.'Login/iniciarSesion');
+  header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 if(!isset($_SESSION['idHosP'])){
   $_SESSION['idHosP'] = 0;
@@ -35,7 +35,7 @@ $(document).ready(function(){
   <div class="container-fluid">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-        <a href="<?php echo URL;?>Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+        <a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
       </div>  
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
         <h2 class="form-signin-heading" style="margin-left: 60%;">Hospitalización</h2>
@@ -47,7 +47,7 @@ $(document).ready(function(){
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                      <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+                      <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
                   </ul>
                </li>
           </ul>
@@ -61,14 +61,14 @@ $(document).ready(function(){
       <div class="container-fluid">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-            <form class="form-group row" action="<?php echo URL;?>Hospitalizacion/AgregarHospitalizacion" method="POST">
+            <form class="form-group row" action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/AgregarHospitalizacion" method="POST">
               <input class="form-control" style="display: none;"  type="text" value="<?php echo $_SESSION['cedula'];?>" id="idPac" name="idPac">
               <input class="form-control" style="display: none;" type="text" value="<?php echo $_SESSION['idLastDgn'];?>" id="idDiag" name="idDiag">
               <button id="btnAgreHos"   class="btn btn-success" type="submit"> <span class="glyphicon glyphicon-pencil"></span>&nbsp;Iniciar Hospitalización</button>
             </form>
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="margin-left: 5%;">
-            <form action="<?php echo URL;?>Hospitalizacion/finalizarHos" method="POST">
+            <form action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/finalizarHos" method="POST">
               <input class="form-control" style="display: none;" type="text" value="<?php echo $_SESSION['idHosP'];?>" id="idhos" name="idhos">   
               <button type="button" id="btnAgreOB" data-toggle="modal" data-target="#modal-12" class="btn btn-warning">Agregar Observación</button>
               <button class="btn btn-danger"  id="btnFinHos" type="submit"> <span class="glyphicon glyphicon-pencil"></span>&nbsp;Finalizar Hospitalización</button>
@@ -80,10 +80,10 @@ $(document).ready(function(){
 
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <ul id="lista" class="nav nav-pills nav-justified nav-tabs">
-        <li><a href="<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
-        <li><a href="<?php echo URL;?>Patologia/mostrarDia">Patologías</a></li>
-        <li><a href="<?php echo URL;?>Tratamiento/mostrarDia">Tratamientos</a></li>
-        <li><a href="<?php echo URL;?>Examen/mostrarDia">Exámenes</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Patologia/mostrarDia">Patologías</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Tratamiento/mostrarDia">Tratamientos</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Examen/mostrarDia">Exámenes</a></li>
         <li class="active"><a href="#">Hospitalizaciones</a></li>
         
       </ul>
@@ -92,7 +92,7 @@ $(document).ready(function(){
     <div >
     
       <div class="container">
-       <form action="<?php echo URL;?>Hospitalizacion/AgregarObsHospit" method="POST">
+       <form action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/AgregarObsHospit" method="POST">
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">         
               <div>
               <input style="display: none;" class="form-control" type="datetime" value="" id="fechaIn" name="fechaIn">
@@ -165,7 +165,7 @@ $(document).ready(function(){
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h3 class="modal-title">Modificar Observación</h3>
       <div class="modal-body">
-        <form action="<?php echo URL;?>Hospitalizacion/ModificarObsHospit" method="POST">
+        <form action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/ModificarObsHospit" method="POST">
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
           </div> 
           <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
@@ -203,7 +203,7 @@ $(document).ready(function(){
         <h3 class="modal-title">Agregar observación</h3>
       
       <div class="modal-body">
-        <form action="<?php echo URL;?>Hospitalizacion/AgregarObsHospit" method="POST">
+        <form action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/AgregarObsHospit" method="POST">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 "></div> 
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
               <input type="text" style="display: none;" id="idOB" name="idOB">
@@ -237,7 +237,7 @@ $(document).ready(function(){
             <h3 class="modal-title">Eliminar Observación</h3>
         </div>
           <div class="modal-body form">
-            <form action="<?php echo URL;?>Hospitalizacion/eliminarOBHospitalizacion" method="POST" id="form" class="form-horizontal">
+            <form action="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/eliminarOBHospitalizacion" method="POST" id="form" class="form-horizontal">
                 <div class="form-body">
                   <div class="form-group">
                       <h3>&nbsp;&nbsp;Seguro que desea eliminarlo?</h3>
@@ -306,7 +306,7 @@ $(document).ready(function(){
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-        <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
+        <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
         <button id="verHist" class="btn btn-primary">Ver historial</button>
       </div>
       <a style="margin-left: 4%;" class="btn btn-danger" href="<?php echo URL;?>Diagnostico/FinalizarConsulta">Finalizar consulta</a>
@@ -347,7 +347,7 @@ $(document).ready(function() {
 
       $.ajax({
         type: 'POST',
-        url: '<?php echo URL;?>Hospitalizacion/HistorialHospi',
+        url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/HistorialHospi',
         dataType: 'json',
         success: function(response){
           var tabla = $("#hospitalizacion tbody").html('');
@@ -371,7 +371,7 @@ $(document).ready(function() {
     function mostrar(){
     $.ajax({
         type: 'POST',
-        url: '<?php echo URL;?>Hospitalizacion/mos',
+        url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mos',
         success: function(data){
           console.log(data);
         },
@@ -390,7 +390,7 @@ $(document).ready(function() {
  $.ajax({
       data:{"idOB":idOb, "descob": descob, "idDiagMo": idDiagMo, "idHosP": idHosP},
       type: 'POST',
-      url: '<?php echo URL;?>Hospitalizacion/ModificarObsHospit',
+      url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/ModificarObsHospit',
         success: function(){
         var tabla = $("#example tbody").html('');
         window.location.reload();
@@ -406,7 +406,7 @@ $(document).ready(function() {
 
 $(document).on('click', '#btnAgreHos',function(){
        $.ajax({
-          url: '<?php echo URL;?>Hospitalizacion/mostrarObsHospi',
+          url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi',
           success: function(){
           console.log("hola");
           mostrar();
@@ -419,7 +419,7 @@ $(document).on('click', '#btnAgreHos',function(){
 
 $(document).on('click', '#btnFinHos',function(){
        $.ajax({
-          url: '<?php echo URL;?>Hospitalizacion/mostrarObsHospi',
+          url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi',
           success: function(){
           console.log("hola");
           mostrar();

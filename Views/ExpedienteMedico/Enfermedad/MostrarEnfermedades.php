@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 	session_start();
 	if(!isset($_SESSION['funcionario'])){
-		header('location: '.URL.'Login/iniciarSesion');
+		header('location: '.URL.'Usuarios/Login/iniciarSesion');
 	}
 ?>
 <!DOCTYPE>
@@ -34,7 +34,7 @@
 					   <li class="dropdown">
 				       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+					            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 				          </ul>
 				       </li>
 					</ul>
@@ -42,7 +42,7 @@
 			</div>	
 	   	</div>
 	   	 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-	   		<a href="<?php echo URL;?>Index/indexDoc"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+	   		<a href="<?php echo URL;?>Usuarios/Index/indexDoc"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 	   	</div>	
 	   	<hr>
 	   </div>
@@ -95,7 +95,7 @@
 					<h3 class="modal-title">Agregar enfermedad</h3>
 				</div>
 				 <div class="modal-body ">			
-					<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>Enfermedad/AgregarEnfermedad" method="POST" onsubmit="return CamposVaciosA()">
+					<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>ExpedienteMedico/Enfermedad/AgregarEnfermedad" method="POST" onsubmit="return CamposVaciosA()">
 						<div class="container">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="form-group row">
@@ -149,7 +149,7 @@
 					<h3 class="modal-title">Modificar enfermedad</h3>
 				</div>
 				 <div class="modal-body ">			
-					<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>Enfermedad/ModificarEnfermedad" method="POST">
+					<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>ExpedienteMedico/Enfermedad/ModificarEnfermedad" method="POST">
 						<div class="container">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<div class="form-group row">
@@ -203,7 +203,7 @@
 	        	<h3 class="modal-title">Eliminar Enfermedad</h3>
 	      	</div>
       		<div class="modal-body form">
-        		<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>Enfermedad/EliminarEnfermedad" method="POST">
+        		<form class="form-group row" name="Enfermedad" action="<?php echo URL;?>ExpedienteMedico/Enfermedad/EliminarEnfermedad" method="POST">
           			<div class="form-body">
 			            <div class="form-group">
 			              <label class="control-label col-md-3">ID Enfermedad</label>
@@ -225,7 +225,7 @@
 <!-- End Bootstrap modal -->
 
 <div class="container">
-	<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Paciente/mostrar' ">Regresar</button>
+	<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Paciente/mostrar' ">Regresar</button>
 </div>
 
 <script type="text/javascript" charset="utf-8">

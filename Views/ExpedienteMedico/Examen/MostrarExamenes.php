@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
-  header('location: '.URL.'Login/iniciarSesion');
+  header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 $fecha = getdate();
 $fecha = date('Y-m-d H:i:s');
@@ -32,7 +32,7 @@ $(document).ready(function(){
   <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-        <a href="<?php echo URL;?>Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+        <a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
       </div>
       <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
         <h2 class="form-signin-heading" style="margin-left: 60%;">Exámenes</h2>
@@ -44,7 +44,7 @@ $(document).ready(function(){
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+                  <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
                 </ul>
               </li>
              </ul>
@@ -58,12 +58,12 @@ $(document).ready(function(){
   <button id="agreExa" class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-1"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; Agregar Examen</button><br><br>
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <ul id="lista" class="nav nav-pills nav-justified nav-tabs">
-        <li><a href="<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
-         <li><a href="<?php echo URL;?>Patologia/mostrarDia">Patologías</a></li>
-        <li><a href="<?php echo URL;?>Tratamiento/mostrarDia">Tratamientos</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
+         <li><a href="<?php echo URL;?>ExpedienteMedico/Patologia/mostrarDia">Patologías</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Tratamiento/mostrarDia">Tratamientos</a></li>
         <li class="active"><a href="#">Exámenes</a></li>
-        <li><a href="<?php echo URL;?>Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
-        <li><a href="<?php echo URL;?>ControlEstadistico/mostrar">Control Prenatal</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
+        <li><a href="<?php echo URL;?>ExpedienteMedico/ControlEstadistico/mostrar">Control Prenatal</a></li>
       </ul>
     </div>
   <hr /><br><br>    
@@ -113,7 +113,7 @@ $(document).ready(function(){
         <h3 class="modal-title">Agregar Examen</h3>
       </div>
       <div class="modal-body ">
-        <form class="form-group row" action="<?php echo URL;?>Examen/AgregarExamen" method="POST" onsubmit="return CamposVaciosA()">
+        <form class="form-group row" action="<?php echo URL;?>ExpedienteMedico/Examen/AgregarExamen" method="POST" onsubmit="return CamposVaciosA()">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group row">
@@ -158,7 +158,7 @@ $(document).ready(function(){
         <h3 class="modal-title">Modificar Examen</h3>
       </div>
       <div class="modal-body ">
-        <form class="form-group row" action="<?php echo URL;?>Examen/ModificarExamen" method="POST">
+        <form class="form-group row" action="<?php echo URL;?>ExpedienteMedico/Examen/ModificarExamen" method="POST">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="form-group row">
@@ -209,7 +209,7 @@ $(document).ready(function(){
         <h3 class="modal-title">Eliminar Examen</h3>
       </div>
         <div class="modal-body">
-          <form name="EliExamen" action="<?php echo URL;?>Examen/EliminarExamen" method="POST">
+          <form name="EliExamen" action="<?php echo URL;?>ExpedienteMedico/Examen/EliminarExamen" method="POST">
             <div class="form-body">
               <div class="form-group">
                 <h3>Seguro que desea eliminarlo?</h3>
@@ -268,10 +268,10 @@ $(document).ready(function(){
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-        <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
+        <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
         <button id="verHist" class="btn btn-primary">Ver historial</button>
       </div>
-      <a style="margin-left: 4%;" class="btn btn-danger" href="<?php echo URL;?>Diagnostico/FinalizarConsulta">Finalizar consulta</a>
+      <a style="margin-left: 4%;" class="btn btn-danger" href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta">Finalizar consulta</a>
     </div>
   </div>
 </div>
@@ -280,7 +280,7 @@ $(document).ready(function(){
   $(function(){
     $.ajax({
         type: 'POST',
-        url: '<?php echo URL;?>Examen/mostrarHistorial',
+        url: '<?php echo URL;?>ExpedienteMedico/Examen/mostrarHistorial',
         dataType: 'json',
         success: function(response){
           var tabla = $("#examenes tbody").html('');

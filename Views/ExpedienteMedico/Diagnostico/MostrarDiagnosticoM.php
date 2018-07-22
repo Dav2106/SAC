@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
-	header('location: '.URL.'Login/iniciarSesion');
+	header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 $fecha = getdate();
 $fecha = date('Y-m-d H:i:s');?>
@@ -28,7 +28,7 @@ $fecha = date('Y-m-d H:i:s');?>
 	<div class="container-fluid">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-	   		<a href="<?php echo URL;?>Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+	   		<a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 	   	</div>	
 	   <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 	   		<h2 class="form-signin-heading" style="margin-left: 40%;">Diagnósticos</h2>
@@ -40,7 +40,7 @@ $fecha = date('Y-m-d H:i:s');?>
 					   <li class="dropdown">
 				       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+					            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 				          </ul>
 				       </li>
 					</ul>
@@ -56,10 +56,10 @@ $fecha = date('Y-m-d H:i:s');?>
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul id="lista" class="nav nav-pills nav-justified nav-tabs">
 			  <li class="active"><a href="#">Diagnósticos</a></li>
-			  <li><a href="<?php echo URL;?>Patologia/mostrarDia">Patologías</a></li>
-			  <li><a href="<?php echo URL;?>Tratamiento/mostrarDia">Tratamientos</a></li>
-			  <li><a href="<?php echo URL;?>Examen/mostrarDia">Exámenes</a></li>
-			  <li><a href="<?php echo URL;?>Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Patologia/mostrarDia">Patologías</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Tratamiento/mostrarDia">Tratamientos</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Examen/mostrarDia">Exámenes</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
 			  
 			</ul>
 		</div>
@@ -114,7 +114,7 @@ $fecha = date('Y-m-d H:i:s');?>
 				 	<h3 class="modal-title">Agregar diagnóstico</h3>
 				</div>
 				<div class="modal-body">
-					<form name="Diagnostico" method="POST" action="<?php echo URL;?>Diagnostico/AgregarDiagnostico" onsubmit="return CamposVaciosA()">
+					<form name="Diagnostico" method="POST" action="<?php echo URL;?>ExpedienteMedico/Diagnostico/AgregarDiagnostico" onsubmit="return CamposVaciosA()">
 						<div class="container">
 						    <div class="form-group row">
 							    <input style="display: none;" type="datetime" id="fecha" name="fecha" value="<?php echo $fecha;?>">
@@ -146,7 +146,7 @@ $fecha = date('Y-m-d H:i:s');?>
 				 	<h3 class="modal-title">Modificar diagnóstico</h3>
 				</div>
 				<div class="modal-body ">
-					<form name="Diagnostico" method="POST" action="<?php echo URL;?>Diagnostico/ModificarDiagnostico">
+					<form name="Diagnostico" method="POST" action="<?php echo URL;?>ExpedienteMedico/Diagnostico/ModificarDiagnostico">
 						<div class="container">
 							<input type="text" name="id" id="id" style="display: none;">
 							<input value="<?php echo $fecha;?>" style="display: none;"  value="<?php echo $fecha;?>" class="form-control" required="required" type="datetime" id="fecha" name="fecha">
@@ -179,7 +179,7 @@ $fecha = date('Y-m-d H:i:s');?>
 	        	<h3 class="modal-title">Eliminar diagnóstico</h3>
 	    	</div>
 	      	<div class="modal-body form">
-	        	<form action="<?php echo URL;?>Diagnostico/EliminarDiagnostico" method="POST" id="form" class="form-horizontal">
+	        	<form action="<?php echo URL;?>ExpedienteMedico/Diagnostico/EliminarDiagnostico" method="POST" id="form" class="form-horizontal">
 	          		<div class="form-body">
 			            <div class="form-group">
 			              	<h3>&nbsp;&nbsp;Seguro que desea eliminar?</h3>
@@ -268,12 +268,12 @@ $fecha = date('Y-m-d H:i:s');?>
    <div class="row">
    		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	   		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-	   			<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Paciente/mostrar';">Regresar</button>
+	   			<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Paciente/mostrar';">Regresar</button>
 			   <button id="verHist" class="btn btn-primary">Ver historial</button>
 			   <button id="hos" class="btn btn-warning">Pendientes</button>
 	   		</div>
 		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
-		   <a class="btn btn-danger" href="<?php echo URL;?>Diagnostico/FinalizarConsulta">Finalizar consulta</a>
+		   <a class="btn btn-danger" href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta">Finalizar consulta</a>
    		</div>
    </div>
 </div>
@@ -283,7 +283,7 @@ $(document).ready(function(){
 	$('#example').DataTable();
 	$.ajax({
 		type: 'POST',
-		url: '<?php echo URL;?>Diagnostico/mostrarHistorial',
+		url: '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarHistorial',
 		dataType: 'json',
 		success: function(response){
 			var tabla = $("#diagnosticos tbody").html('');
@@ -311,12 +311,12 @@ $(document).ready(function(){
 	$(document).on('click','#hos', function(){
 	        $.ajax({
 				type: 'POST',
-				url: '<?php echo URL;?>Examen/BuscarExam',
+				url: '<?php echo URL;?>ExpedienteMedico/Examen/BuscarExam',
 				success: function(response){
 					$("#respuesta1").html('');
 					console.log(response);
 					if(response != 0){
-						$("#respuesta1").html("<h3>Paciente tiene examen pendiente</h3><br /><br /><a href='<?php echo URL;?>Examen/cargarPendiente'>Ir a Examenes</a>");
+						$("#respuesta1").html("<h3>Paciente tiene examen pendiente</h3><br /><br /><a href='<?php echo URL;?>ExpedienteMedico/Examen/cargarPendiente'>Ir a Examenes</a>");
 					}else if(response == 0){
 						$("#respuesta1").html("<h3>Paciente no tiene examenes pendientes</h3>");
 					}
@@ -327,12 +327,12 @@ $(document).ready(function(){
 			});
 	        $.ajax({
 				type: 'POST',
-				url: '<?php echo URL;?>Hospitalizacion/BuscarHosp',
+				url: '<?php echo URL;?>ExpedienteMedico/Hospitalizacion/BuscarHosp',
 				success: function(response){
 					$("#respuesta").html('');
 					console.log(response);
 					if(response != 0){
-						$("#respuesta").html("<h3>Paciente tiene hospitalización vigente</h3><br /><br /><a href='<?php echo URL;?>Hospitalizacion/mostrarObsHospi'>Ir a hospitalización</a>");
+						$("#respuesta").html("<h3>Paciente tiene hospitalización vigente</h3><br /><br /><a href='<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi'>Ir a hospitalización</a>");
 					}else if(response == 0){
 						$("#respuesta").html("<h3>Paciente no tiene hospitalización vigente</h3>");
 					}
@@ -357,7 +357,7 @@ $(document).ready(function(){
 	function cargaUltimoDiagnostico(){
 		$.ajax({
 			type: 'POST',
-			url: '<?php echo URL;?>Diagnostico/cargarUltimoDiagnostico',
+			url: '<?php echo URL;?>ExpedienteMedico/Diagnostico/cargarUltimoDiagnostico',
 			dataType: 'json',
 			success: function(data){
 				console.log(data);

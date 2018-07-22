@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 	session_start();
 	if(!isset($_SESSION['funcionario'])){
-		header('location: '.URL.'Login/iniciarSesion');
+		header('location: '.URL.'Usuarios/Login/iniciarSesion');
 	}
 ?>
 <!DOCTYPE>
@@ -27,7 +27,7 @@
 	<div class="container-fluid">
 	   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	   <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-	   		<a href="<?php echo URL;?>Index/indexDoc"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+	   		<a href="<?php echo URL;?>Usuarios/Index/indexDoc"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 	   	</div>
 	   <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	   		<h2 class="form-signin-heading" style="margin-left: 65%;">Pacientes</h2>
@@ -39,7 +39,7 @@
 					   <li class="dropdown">
 				       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+					            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 				          </ul>
 				       </li>
 					</ul>
@@ -78,7 +78,7 @@
 	</div>   
 	<div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<br><div class="alert alert-info"></div>
-		<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Index/indexDoc';">Regresar</button>
+		<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Usuarios/Index/indexDoc';">Regresar</button>
 	</div>
 <!-- Bootstrap modal -->
 <div class="modal fade" id="modal-1" role="dialog">
@@ -89,7 +89,7 @@
 			 	<h3 class="modal-title">Agregar paciente</h3>
 			</div>
 			<div class="modal-body ">
-			 	<form class="form-group row" name="Paciente" action="<?php echo URL;?>Paciente/AgregarPaciente" method="POST" onsubmit="return CamposVaciosA()">
+			 	<form class="form-group row" name="Paciente" action="<?php echo URL;?>ExpedienteMedico/Paciente/AgregarPaciente" method="POST" onsubmit="return CamposVaciosA()">
 				 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					 	<div class="form-group row" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						    <label for="example-text-input" class="col-md-2 col-form-label">Cédula:</label>
@@ -167,7 +167,7 @@
 			 	<h3 class="modal-title">Modificar paciente</h3>
 			</div>
 			<div class="modal-body ">
-			 	<form class="form-group row" name="Paciente" action="<?php echo URL;?>Paciente/ModificarPaciente" method="POST">
+			 	<form class="form-group row" name="Paciente" action="<?php echo URL;?>ExpedienteMedico/Paciente/ModificarPaciente" method="POST">
 				 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					 	<div class="form-group row" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						    <label for="example-text-input" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-form-label">Cédula:</label>
@@ -245,7 +245,7 @@
 		        <h3 class="modal-title">Eliminar Paciente</h3>
 	        </div>
       		<div class="modal-body form">
-		        <form action="<?php echo URL;?>Paciente/EliminarPaciente" method="POST" id="form" class="form-horizontal">
+		        <form action="<?php echo URL;?>ExpedienteMedico/Paciente/EliminarPaciente" method="POST" id="form" class="form-horizontal">
 			        <div class="form-body">
 			            <div class="form-group">
 			         		<h3>&nbsp;&nbsp;Seguro que desea eliminar?</h3>
@@ -315,7 +315,7 @@
 		var table = $("#example").DataTable({
 			"ajax":{
 				"method": "POST",
-				"url": "<?php echo URL;?>Paciente/CargarPersonas"
+				"url": "<?php echo URL;?>ExpedienteMedico/Paciente/CargarPersonas"
 			},
 			"columns":[
 				{"data": "EMD01IDPAC"},
@@ -366,7 +366,7 @@
 			var sexo = $(_trEdit).find('td:eq(7)').text();
 
 				
-			window.location = '<?php echo URL;?>Diagnostico/mostrarDia/'+id+"-"+nombre+"-"+sexo;
+			window.location = '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/'+id+"-"+nombre+"-"+sexo;
 		});
 	}
 

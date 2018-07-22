@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
-	header('location: '.URL.'Login/iniciarSesion');
+	header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 $fecha = getdate();
 $fecha = date('Y-m-d');?>
@@ -31,7 +31,7 @@ $fecha = date('Y-m-d');?>
 <div class="container-fluid">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-	   		<a href="<?php echo URL;?>Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+	   		<a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 	   	</div>	
 	   <div class="col-lg-7 col-md-7col-sm-7 col-xs-7">
 	   		<h2 class="form-signin-heading" style="margin-left: 55%;">Control Prenatal</h2>
@@ -43,7 +43,7 @@ $fecha = date('Y-m-d');?>
 					   <li class="dropdown">
 				       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+					            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 				          </ul>
 				       </li>
 					</ul>
@@ -61,11 +61,11 @@ $fecha = date('Y-m-d');?>
     <button class="btn btn-success" id="btnAgregar" type="button"  data-toggle="modal" data-target="#modal-1"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; Agregar Control Prenatal</button><br><br>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<ul id="lista" class="nav nav-pills nav-justified nav-tabs">
-			  <li ><a href="<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
-			  <li><a href="<?php echo URL;?>Patologia/mostrarDia">Patologías</a></li>
-			  <li><a href="<?php echo URL;?>Tratamiento/mostrarDia">Tratamientos</a></li>
-			  <li><a href="<?php echo URL;?>Examen/mostrarDia">Exámenes</a></li>
-			  <li><a href="<?php echo URL;?>Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
+			  <li ><a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Patologia/mostrarDia">Patologías</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Tratamiento/mostrarDia">Tratamientos</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Examen/mostrarDia">Exámenes</a></li>
+			  <li><a href="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
 			  <li class="active"><a href="#">Control Prenatal</a></li>
 			</ul>
 		</div>
@@ -119,7 +119,7 @@ $fecha = date('Y-m-d');?>
 			 	<h3 class="modal-title">Agregar Control Prenatal</h3>
 			</div>
 			<div class="modal-body ">	
-				<form class="form-group row" name="ControlEstadistico"  action="<?php echo URL;?>ControlEstadistico/AgregarControl" method="POST">
+				<form class="form-group row" name="ControlEstadistico"  action="<?php echo URL;?>ExpedienteMedico/ControlEstadistico/AgregarControl" method="POST">
 					<input style="display: none;" type="date" value="<?php echo $fecha;?>" name="fecha" id="fecha">
 					<input type="text" style="display: none;" id="idDiagnostico" name="idDiagnostico" value="<?php echo $_SESSION['idLastDgn'];?>">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -192,7 +192,7 @@ $fecha = date('Y-m-d');?>
 			 	<h3 class="modal-title">Modificar Control Prenatal</h3>
 			</div>
 			<div class="modal-body ">
-				<form class="form-group row" name="ControlEstadistico"  action="<?php echo URL;?>ControlEstadistico/ModificarControlEstadistico" method="POST">
+				<form class="form-group row" name="ControlEstadistico"  action="<?php echo URL;?>ExpedienteMedico/ControlEstadistico/ModificarControlEstadistico" method="POST">
 					<input type="text"  name="ID1" id="ID1" placeholder="ID" class="form-control" value="" style="display: none;">
 					<input type="date" style="display: none;" name="fecha1" id="fecha1" value="<?php echo $fecha;?>">
 					<input type="text" style="display: none;"  name="idDiagnostico1" id="idDiagnostico1" placeholder="ID Diagnostico" class="form-control" value="">
@@ -266,7 +266,7 @@ $fecha = date('Y-m-d');?>
        			<h3 class="modal-title">Eliminar Control Prenatal</h3>
    			</div>
    			<div class="modal-body form">
-       			<form action="<?php echo URL;?>ControlEstadistico/EliminarControlEstadistico" method="POST" id="form" class="form-horizontal">
+       			<form action="<?php echo URL;?>ExpedienteMedico/ControlEstadistico/EliminarControlEstadistico" method="POST" id="form" class="form-horizontal">
         			<div class="form-body">
             			<div class="form-group">
             				<h3>&nbsp;&nbsp;Seguro que desea eliminarlo?</h3>
@@ -291,8 +291,8 @@ $fecha = date('Y-m-d');?>
 <!-- End Bootstrap modal -->
 <div class="col-lg12 col-md-12 col-sm-12 col-xs-12 container-fluid" style="margin-top: 140px; position: fixed;">
 	<div class="alert alert-info"></div>
-	<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>'">Regresar</button>
-	<a class="btn btn-danger" style="margin-left: 80%;" href="<?php echo URL;?>Diagnostico/FinalizarConsulta">Finalizar consulta</a>
+	<button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>'">Regresar</button>
+	<a class="btn btn-danger" style="margin-left: 80%;" href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta">Finalizar consulta</a>
 </div>
 <script type="text/javascript">
 	$(document).on('click','#btn-cargar', function(){

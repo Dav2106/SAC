@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
-	header('location: '.URL.'Login/iniciarSesion');
+	header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 $fecha = getdate();
 $fecha = date('Y-m-d');?>
@@ -26,7 +26,7 @@ $fecha = date('Y-m-d');?>
 	<div class="container-fluid">
        	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
        	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-	   		<a href="<?php echo URL;?>Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+	   		<a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 	   	</div>
 	    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	   		<h2 class="form-signin-heading" style="margin-left: 60%;">Patologías</h2>
@@ -38,7 +38,7 @@ $fecha = date('Y-m-d');?>
 					   <li class="dropdown">
 				       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+					            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 				          </ul>
 				       </li>
 					</ul>
@@ -53,11 +53,11 @@ $fecha = date('Y-m-d');?>
         <button class="btn btn-success" id="btnAgregar" type="button"  data-toggle="modal" data-target="#modal-1"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; Agregar Patologias</button>&nbsp;<button class="btn btn-primary" id="btnAgrePatologia" type="button"  data-toggle="modal" data-target="#modal-5"> <span class="glyphicon glyphicon-pencil"></span> &nbsp; Seleccionar Patologías</button><br><br>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	      <ul id="lista" class="nav nav-pills nav-justified nav-tabs">
-	        <li><a href="<?php echo URL;?>Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
+	        <li><a href="<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrarDia/<?php echo $_SESSION['cedula']."-".$_SESSION['nombre']."-".$_SESSION['sexo'];?>">Diagnósticos</a></li>
 	        <li class="active"><a href="#">Patologías</a></li>
-	        <li><a href="<?php echo URL;?>Tratamiento/mostrarDia">Tratamientos</a></li>
-	        <li><a href="<?php echo URL;?>Examen/mostrarDia">Exámenes</a></li>
-	        <li><a href="<?php echo URL;?>Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
+	        <li><a href="<?php echo URL;?>ExpedienteMedico/Tratamiento/mostrarDia">Tratamientos</a></li>
+	        <li><a href="<?php echo URL;?>ExpedienteMedico/Examen/mostrarDia">Exámenes</a></li>
+	        <li><a href="<?php echo URL;?>ExpedienteMedico/Hospitalizacion/mostrarObsHospi">Hospitalizaciones</a></li>
 	        
 	      </ul>
 	    </div>
@@ -99,7 +99,7 @@ $fecha = date('Y-m-d');?>
 				<h3 class="modal-title">Agregar Patología</h3>
 			</div>
 			<div class="modal-body">		
-				<form class="form-group row" name="Patologias" action="<?php echo URL;?>Patologia/AgregarPatologia" method="POST" onsubmit="return CamposVaciosA()">
+				<form class="form-group row" name="Patologias" action="<?php echo URL;?>ExpedienteMedico/Patologia/AgregarPatologia" method="POST" onsubmit="return CamposVaciosA()">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="form-group row">
 					 	    <label for="example-text-input" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-form-label">Descripción:</label> 
@@ -131,7 +131,7 @@ $fecha = date('Y-m-d');?>
 				<h3 class="modal-title">Modificar Patología</h3>
 			</div>
 			<div class="modal-body">		
-				<form class="form-group row" name="Patologias" action="<?php echo URL;?>Patologia/ModificarPatologia" method="POST">
+				<form class="form-group row" name="Patologias" action="<?php echo URL;?>ExpedienteMedico/Patologia/ModificarPatologia" method="POST">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="form-group row">
 							<input type="text" name="id1" id="id1" style="display: none;">
@@ -163,7 +163,7 @@ $fecha = date('Y-m-d');?>
 			    <h3 class="modal-title">Eliminar Patología</h3>
 			</div>
 			<div class="modal-body form">
-			    <form action="<?php echo URL;?>Patologia/EliminarPatologia" method="POST" id="form" class="form-horizontal">
+			    <form action="<?php echo URL;?>ExpedienteMedico/Patologia/EliminarPatologia" method="POST" id="form" class="form-horizontal">
 			        <div class="form-group row">
 						<h3>&nbsp;&nbsp;Seguro que desea eliminarlo?</h3>
 						<div class="col-xs-3">
@@ -201,7 +201,7 @@ $fecha = date('Y-m-d');?>
 	      	</form>
 			<div class="modal-footer" >
 				<div class="col-xs-12">
-					<a href="<?php echo URL;?>Patologia/mostrarDia" class="btn btn-default">Cerrar</a>
+					<a href="<?php echo URL;?>ExpedienteMedico/Patologia/mostrarDia" class="btn btn-default">Cerrar</a>
 				</div>
 			</div>
 		</div><!-- /.modal-content -->
@@ -212,8 +212,8 @@ $fecha = date('Y-m-d');?>
 <br>
 <div class="container-fluid" style="margin-top: 135px;">
 	<div class="alert alert-info"></div>
-    <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Diagnostico/mostrar/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
-    <a style="margin-left: 80%;" class="btn btn-danger" href="<?php echo URL;?>Diagnostico/FinalizarConsulta">Finalizar consulta</a>
+    <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>ExpedienteMedico/Diagnostico/mostrar/<?php echo $_SESSION["cedula"]."-".$_SESSION["nombre"]."-".$_SESSION["sexo"];?>';">Regresar</button>
+    <a style="margin-left: 80%;" class="btn btn-danger" href="<?php echo URL;?>ExpedienteMedico/Diagnostico/FinalizarConsulta">Finalizar consulta</a>
 </div>
 
 <script type="text/javascript" charset="utf-8">
@@ -223,7 +223,7 @@ $(document).ready(function() {
 	function cargarPatologias(){
 	$.ajax({
 		type: "POST",
-		url: "<?php echo URL;?>Patologia/CargarPatologias",
+		url: "<?php echo URL;?>ExpedienteMedico/Patologia/CargarPatologias",
 		dataType: 'json',
 		success: function(data){
 			console.log(data);
@@ -267,7 +267,7 @@ $(document).ready(function() {
 	  			$.ajax({
 	    			data: datos,
 	    			type: 'POST',
-	    			url: '<?php echo URL;?>Patologia/AgregarPatologiaList',
+	    			url: '<?php echo URL;?>ExpedienteMedico/Patologia/AgregarPatologiaList',
 	    			dataType: 'json',
 	    			success: function(data){
 	    				console.log(data);
@@ -284,7 +284,7 @@ $(document).ready(function() {
 	  			$.ajax({
 	    			data: datos,
 	    			type: 'POST',
-	    			url: '<?php echo URL;?>Patologia/EliminarPatologiaList',
+	    			url: '<?php echo URL;?>ExpedienteMedico/Patologia/EliminarPatologiaList',
 	    			dataType: 'json',
 	    			success: function(data){
 	    				console.log(data);
