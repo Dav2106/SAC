@@ -17,7 +17,7 @@
 	<div class="container-fluid">
 		<div class="col-md-12">
 			<div class="col-xs-1">
-		   		<a href="<?php echo URL;?>Reportes/index"><img src="<?php echo URL;?>Imagenes/centro-medico1.png" alt=""></a>
+		   		<a href="<?php echo URL;?>Reportes/Reportes/index"><img src="<?php echo URL;?>Imagenes/centro-medico1.png" alt=""></a>
 		   	</div>
 			<div class="col-xs-7">
 				<h1>Medicamento mas recetado</h1>
@@ -29,7 +29,7 @@
 						   <li class="dropdown">
 					       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 					          <ul class="dropdown-menu">
-						            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+						            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 					          </ul>
 					       </li>
 						</ul>
@@ -70,7 +70,7 @@
 		$.ajax({
 			data: {"fecha1" : fecha1, "fecha2" : fecha2},
 			type: "POST",
-			url: "<?php echo URL;?>Reportes/mostrarMasRecetado",
+			url: "<?php echo URL;?>Reportes/Reportes/mostrarMasRecetado",
 			dataType: 'json',
 			success: function(response){
 				$.each(response, function(index, record){

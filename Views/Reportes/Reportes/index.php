@@ -18,7 +18,7 @@
 	<div class="container-fluid">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-			<a href="<?php echo URL;?>Index/redirect"><img src="../Imagenes/centro-medico1.png" alt=""></a>
+			<a href="<?php echo URL;?>Usuarios/Index/redirect"><img src="../Imagenes/centro-medico1.png" alt=""></a>
 		</div>	
 		   <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	            <nav>
@@ -26,30 +26,30 @@
 	      			   <li class="dropdown">
 				          <a class="dropdown-toggle" data-toggle="dropdown">Pacientes<b class="caret"></b></a>
 				          <ul class="dropdown-menu">
-				            <li><a href="<?php echo URL;?>Reportes/MenosAtendido">Atendidos por consulta</a></li>
-				            <li><a href="<?php echo URL;?>Reportes/HistorialClinico">Historial clínico</a></li>
-				            <li><a href="<?php echo URL;?>Reportes/HistorialFinanciero">Historial financiero</a></li>
+				            <li><a href="<?php echo URL;?>Reportes/Reportes/MenosAtendido">Atendidos por consulta</a></li>
+				            <li><a href="<?php echo URL;?>Reportes/Reportes/HistorialClinico">Historial clínico</a></li>
+				            <li><a href="<?php echo URL;?>Reportes/Reportes/HistorialFinanciero">Historial financiero</a></li>
 				          </ul>
 				        </li>
 	      				<li class="dropdown">
 				          <a class="dropdown-toggle" data-toggle="dropdown">Medicamentos<b class="caret"></b></a>
 				          <ul class="dropdown-menu">
-				            <li><a href="<?php echo URL;?>Reportes/masRecetado">Recetados</a></li>
+				            <li><a href="<?php echo URL;?>Reportes/Reportes/masRecetado">Recetados</a></li>
 				          </ul>
 				        </li>
 	      				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financieros<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-					            <li><a href="<?php echo URL;?>Reportes/atenyPag">Atendidos y que cancelaron</a></li>
-					             <li><a href="<?php echo URL;?>Reportes/FechaEspecifica">Atendidos Fecha especifica</a></li>
-					              <li><a href="<?php echo URL;?>Reportes/rangoFecha">Atendidos Rango fecha</a></li>
-					              <li><a href="<?php echo URL;?>Reportes/ReporteGeneral">Atendidos por día</a></li>
-					              <li><a href="<?php echo URL;?>Reportes/controlDia">Control diario</a></li>
+					            <li><a href="<?php echo URL;?>Reportes/Reportes/atenyPag">Atendidos y que cancelaron</a></li>
+					             <li><a href="<?php echo URL;?>Reportes/Reportes/FechaEspecifica">Atendidos Fecha especifica</a></li>
+					              <li><a href="<?php echo URL;?>Reportes/Reportes/rangoFecha">Atendidos Rango fecha</a></li>
+					              <li><a href="<?php echo URL;?>Reportes/Reportes/ReporteGeneral">Atendidos por día</a></li>
+					              <li><a href="<?php echo URL;?>Reportes/Reportes/controlDia">Control diario</a></li>
 				          </ul>
 	      				</li>
 	      				<li class="dropdown">
 				          <a class="dropdown-toggle" data-toggle="dropdown">Otros<b class="caret"></b></a>
 				          <ul class="dropdown-menu">
-				            <li><a href="<?php echo URL;?>Reportes/masComun">Enfermedades mas comunes</a></li>
+				            <li><a href="<?php echo URL;?>Reportes/Reportes/masComun">Enfermedades mas comunes</a></li>
 				          </ul>
 				        </li>
 				</ul>
@@ -62,7 +62,7 @@
 						   <li class="dropdown">
 					       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 						    <ul class="dropdown-menu">
-							    <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+							    <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 						    </ul>
 						    </li>
 						</ul>

@@ -17,7 +17,7 @@
 	<div class="container-fluid">
 		<div class="col-md-12">
 			<div class="col-xs-1">
-		   		<a href="<?php echo URL;?>Reportes/index"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
+		   		<a href="<?php echo URL;?>Reportes/Reportes/index"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>
 		   	</div>
 			<div class="col-xs-7">
 				<h1 id="ec">Historial de Hospitalizacion</h1>
@@ -29,7 +29,7 @@
 						   <li class="dropdown">
 					       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 					          <ul class="dropdown-menu">
-						            <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar sesión</a></li>
+						            <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar sesión</a></li>
 					          </ul>
 					       </li>
 						</ul>
@@ -66,7 +66,7 @@
 		});
 		function cargarTabla(){
 			$.ajax({
-			url: "<?php echo URL;?>Reportes/Hospitalizacion",
+			url: "<?php echo URL;?>Reportes/Reportes/Hospitalizacion",
 			dataType: 'json',
 			success: function(response){
 				$.each(response, function(index, record){
