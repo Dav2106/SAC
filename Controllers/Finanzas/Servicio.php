@@ -2,13 +2,15 @@
 	
 	Class Servicio extends Controller{
 		
+		private $modulo = "Finanzas";
+
 		function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+			parent::__construct($this->modulo);
 		}
 
 		public function mostrar(){
 			echo $this->CargarServicios();
-			$this->view->render($this,'MostrarServicios');
+			$this->view->render($this->modulo, $this,'MostrarServicios');
 		}
 
 		public function AgregarServicio(){

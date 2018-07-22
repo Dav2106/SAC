@@ -1,66 +1,71 @@
 <?php  
 
-Class Reportes extends Controller
+Class Reportes extends Controller{
 
-{
+	private $modulo = "Reportes";
+
+	function __construct(){
+		parent::__construct($this->modulo);
+	}
+
 	public function index(){
-		$this->view->render($this, 'index');
+		$this->view->render($this->modulo, $this, 'index');
 	}
 
 	public function masAtendido(){
-		$this->view->render($this, 'MasAtendido');
+		$this->view->render($this->modulo, $this, 'MasAtendido');
 	}
 
 	public function menosAtendido(){
-		$this->view->render($this, 'MenosAtendido');
+		$this->view->render($this->modulo, $this, 'MenosAtendido');
 	}
 
 	public function masRecetado(){
-		$this->view->render($this, 'MasRecetado');
+		$this->view->render($this->modulo, $this, 'MasRecetado');
 	}
 
 	public function menosRecetado(){
-		$this->view->render($this, 'MenosRecetado');
+		$this->view->render($this->modulo, $this, 'MenosRecetado');
 	}
 
 	public function masComun(){
-		$this->view->render($this, 'EnfermedadesComunes');
+		$this->view->render($this->modulo, $this, 'EnfermedadesComunes');
 	}
 
 	public function atenyPag(){
-		$this->view->render($this, 'AtenyPag');
+		$this->view->render($this->modulo, $this, 'AtenyPag');
 	}
 
 	public function detaFact(){
-		$this->view->render($this, 'DetaFact');
+		$this->view->render($this->modulo, $this, 'DetaFact');
 	}	
 
 	public function FechaEspecifica(){
-		$this->view->render($this, 'ReFechaEspecifica');
+		$this->view->render($this->modulo, $this, 'ReFechaEspecifica');
 	}
 
 	public function rangoFecha(){
-		$this->view->render($this, 'ReRangoFecha');
+		$this->view->render($this->modulo, $this, 'ReRangoFecha');
 	}
 
 	public function ReporteGeneral(){
-		$this->view->render($this, 'ReporteGeneral');
+		$this->view->render($this->modulo, $this, 'ReporteGeneral');
 	}
 
 	public function hospiGeneral(){
-		$this->view->render($this, 'HospitalizacionGeneral');
+		$this->view->render($this->modulo, $this, 'HospitalizacionGeneral');
 	}
 
 	public function controlDia(){
-		$this->view->render($this, 'ControlDia');
+		$this->view->render($this->modulo, $this, 'ControlDia');
 	}
 
 	public function historialClinico(){
-		$this->view->render($this, 'HistorialClinico');
+		$this->view->render($this->modulo, $this, 'HistorialClinico');
 	}
 
 	public function historialFinanciero(){
-		$this->view->render($this, 'HistorialFinanciero');
+		$this->view->render($this->modulo, $this, 'HistorialFinanciero');
 	}
 
 	public function mostrarMasAtendido(){
