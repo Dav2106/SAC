@@ -1,4 +1,4 @@
-<?php session_set_cookie_params(0,"/");
+<?php @session_set_cookie_params(0,"/");
 @session_start();
 if(!isset($_SESSION['funcionario'])){
   header('location: '.URL.'Usuarios/Login/iniciarSesion');
