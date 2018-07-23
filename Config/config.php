@@ -1,6 +1,6 @@
 <?php
 	
-	define('URL', '/EMD/');//direccion principal del proyecto
+	define('URL', '/SAC/');//direccion principal del proyecto
 	define('LIBS', 'Libs/');//direccion de las librerias
 	
 	define('DB_HOST','localhost');
