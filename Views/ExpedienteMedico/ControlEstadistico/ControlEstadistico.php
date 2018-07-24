@@ -8,18 +8,15 @@ $fecha = date('Y-m-d');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>SAC</title>
-	<?php 
-	$path = "C:/inetpub/wwwroot/SAC/Assets/Assets.php";
-	if(file_exists($path)){
-		require $path;  
-	}
-	?>
-	<script type="text/javascript">
-		$(function(){
-			$("#example").DataTable();
-		});
-	</script>	
+<title>SAC</title>
+<?php 
+require $_SERVER['DOCUMENT_ROOT'] . "/SAC/Assets/Assets.php";
+?>
+<script type="text/javascript">
+	$(function(){
+		$("#example").DataTable();
+	});
+</script>	
 </head>
 <body>
 <div class="container-fluid">

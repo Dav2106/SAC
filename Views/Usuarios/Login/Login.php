@@ -25,7 +25,7 @@
     <div class="container">
 	<div class="main row">
 		<div  class="col-xs col-sm-8 col-md-9 col-lg-12"><br><br>
-			<form class="form-horizontal" role="form" method="POST" action="<?php echo URL;?>Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
+			<form class="form-horizontal" role="form" method="POST" action="<?php echo URL;?>Usuarios/Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
 			  <div class="form-group">
 			    <label for="ejemplo_email_3" class="col-lg-4 control-label">Usuario:</label>
 			    <div class="col-lg-4">

@@ -14,10 +14,7 @@ $fecha = date('Y-m-d H:i:s');?>
 <head>
 <title>SAC</title>
 <?php 
-$path = "C:/inetpub/wwwroot/SAC/Assets/Assets.php";
-if(file_exists($path)){
-	require $path;  
-}
+require $_SERVER['DOCUMENT_ROOT'] . "/SAC/Assets/Assets.php";
 ?>
 </head>
 <body>
