@@ -1,13 +1,14 @@
 <?php
 
 Class Funcionario extends Controller{
+	private $modulo = "Usuarios";
 	function __construct(){
-			parent::__construct();//crea el constructor del padre osea Controller.php
+			parent::__construct($this->modulo);//crea el constructor del padre osea Controller.php
 		}
 
 		public function mostrar(){
 			echo $this->CargarFuncionarios();
-			$this->view->render($this,'MostrarFuncionarios');
+			$this->view->render($this->modulo,$this,'MostrarFuncionarios');
 		}
 
 		public function AgregarFuncionario(){
@@ -28,9 +29,9 @@ Class Funcionario extends Controller{
 					'correo' => $correo, 'cargo' => $cargo);
 
 				echo $this->model->agregarFuncionario($funcionario);
-				header('location:'.URL.'Funcionario/mostrar');
+				header('location:'.URL.'Usuarios/Funcionario/mostrar');
 			}else{
-				header('location:'.URL.'Funcionario/mostrar');
+				header('location:'.URL.'Usuarios/Funcionario/mostrar');
 			}
 		}
 
@@ -50,9 +51,9 @@ Class Funcionario extends Controller{
 					'correo' => $correo, 'cargo' => $cargo);
 
 				echo $this->model->modificarFuncionario($funcionario);
-				header('location:'.URL.'Funcionario/mostrar');
+				header('location:'.URL.'Usuarios/Funcionario/mostrar');
 			}else{
-				header('location:'.URL.'Funcionario/mostrar');
+				header('location:'.URL.'Usuarios/Funcionario/mostrar');
 			}
 		}
 
@@ -62,9 +63,9 @@ Class Funcionario extends Controller{
 					$id = $_POST['id1'];
 				
 					echo $this->model->eliminarFuncionario($id);
-					header('location:'.URL.'Funcionario/mostrar');//se ejecute en el modelo esta funcion
+					header('location:'.URL.'Usuarios/Funcionario/mostrar');//se ejecute en el modelo esta funcion
 				}else{
-					header('location:'.URL.'Funcionario/mostrar');
+					header('location:'.URL.'Usuarios/Funcionario/mostrar');
 				}
 		}
 

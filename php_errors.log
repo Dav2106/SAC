@@ -1,0 +1,281 @@
+[23-Jul-2018 15:31:51 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\inetpub\wwwroot\SAC\Libs\Model.php on line 6
+[23-Jul-2018 15:31:51 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in C:\inetpub\wwwroot\SAC\Models\Usuarios\LoginModel.php on line 7
+[23-Jul-2018 15:34:07 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\inetpub\wwwroot\SAC\Libs\Model.php on line 6
+[23-Jul-2018 15:34:07 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in C:\inetpub\wwwroot\SAC\Models\Usuarios\LoginModel.php on line 7
+[23-Jul-2018 15:49:14 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:49:14 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:49:33 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:49:33 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:50:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:50:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:50:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:50:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:50:23 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 15:50:38 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:50:38 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:50:39 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:50:39 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:50:39 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 15:55:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:55:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:55:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:55:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 15:55:24 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 15:58:20 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:58:20 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 15:58:20 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 15:58:20 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 15:58:20 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:01:40 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 16:01:40 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 60
+[23-Jul-2018 16:01:40 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:01:40 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:01:40 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:16:57 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 62
+[23-Jul-2018 16:16:57 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 62
+[23-Jul-2018 16:16:57 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:16:57 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:16:57 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:17:57 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 62
+[23-Jul-2018 16:17:57 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 62
+[23-Jul-2018 16:17:57 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:17:57 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:17:57 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:18:44 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 16:18:44 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 16:18:44 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:18:44 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:18:44 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:52:54 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 16:52:54 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 16:52:54 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:52:54 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:52:54 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:53:33 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 74
+[23-Jul-2018 16:53:33 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 16:53:33 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 16:53:33 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:08:25 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:08:25 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:08:25 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 17:08:25 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:08:25 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:08:57 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:08:57 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:34 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:34 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:43 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:43 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:51 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:51 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:57 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:09:57 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:15:10 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:15:10 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:21:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:21:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:21:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 17:21:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 17:21:24 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 17:22:31 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:22:31 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:23:03 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:23:03 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:23:03 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 17:23:03 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:23:03 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  Illegal string offset 'funcionario' in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 67
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  Illegal string offset 'funcionario' in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 67
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  Illegal string offset 'funcionario' in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 77
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  Illegal string offset 'Recepcionista' in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 77
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 17:34:33 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:34:33 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:36:02 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:36:02 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:36:02 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 17:36:02 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:36:02 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 17:41:14 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:41:14 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:46:14 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:46:14 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:46:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 17:46:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:35:12 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:35:12 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:35:12 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[23-Jul-2018 18:35:12 UTC] PHP Warning:  require(./Views/Usuarios//IndexDoctor.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 18:35:12 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexDoctor.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[23-Jul-2018 18:36:08 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:36:08 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:36:21 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:36:21 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:37:21 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:37:22 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:38:26 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:38:26 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:38:27 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:38:27 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:38:27 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 18:39:00 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:39:00 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:39:00 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:39:00 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:39:00 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 18:39:37 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:39:37 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:33 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:33 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:33 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:40:33 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:40:33 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 18:40:42 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:42 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:42 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:40:42 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[23-Jul-2018 18:40:42 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[23-Jul-2018 18:40:47 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:40:47 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:41:18 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[23-Jul-2018 18:41:18 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:11:00 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:11:00 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:01 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:01 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:35 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:35 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:35 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:21:35 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:21:35 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[24-Jul-2018 13:21:47 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:47 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:47 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:21:47 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:21:47 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[24-Jul-2018 13:21:54 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:21:54 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:33:14 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:33:14 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:33:14 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:33:14 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:33:14 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[24-Jul-2018 13:33:18 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:33:18 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:07 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:07 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:07 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:37:07 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:37:07 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[24-Jul-2018 13:37:09 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:09 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 13:37:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:37:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[24-Jul-2018 13:37:23 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[24-Jul-2018 16:10:50 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:10:50 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:10:57 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:10:57 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:11:02 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:11:02 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:11:37 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:11:37 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:11:37 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[24-Jul-2018 16:11:37 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[24-Jul-2018 16:11:37 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[24-Jul-2018 16:11:37 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[24-Jul-2018 16:12:09 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:12:09 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[24-Jul-2018 16:12:09 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[24-Jul-2018 16:12:09 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[24-Jul-2018 16:12:09 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[24-Jul-2018 16:12:09 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 02:40:12 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 02:40:13 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 02:40:13 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 02:40:13 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 02:40:13 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 03:07:15 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:07:15 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:07:15 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:07:15 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:07:15 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 03:07:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:07:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:07:23 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:07:23 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:07:23 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[25-Jul-2018 03:07:23 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 03:11:16 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:11:16 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:11:16 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:11:16 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:11:16 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[25-Jul-2018 03:11:16 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 03:24:55 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:24:55 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:24:56 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:24:56 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:24:56 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 03:25:02 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:25:02 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:25:02 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:25:02 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:25:02 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[25-Jul-2018 03:25:02 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 03:35:55 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:35:55 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:36:37 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:36:37 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:36:37 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexAdmin.php on line 6
+[25-Jul-2018 03:36:37 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexAdmin.php on line 43
+[25-Jul-2018 03:46:34 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:46:34 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:46:34 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:46:34 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:46:34 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 03:47:24 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:47:24 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:47:24 UTC] PHP Warning:  get_class() expects parameter 1 to be object, string given in C:\inetpub\wwwroot\SAC\Libs\View.php on line 6
+[25-Jul-2018 03:47:24 UTC] PHP Warning:  require(./Views/Usuarios//IndexRecep.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[25-Jul-2018 03:47:24 UTC] PHP Fatal error:  require(): Failed opening required './Views/Usuarios//IndexRecep.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\SAC\Libs\View.php on line 7
+[25-Jul-2018 03:48:07 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:48:07 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:48:08 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:48:08 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:48:08 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 03:48:30 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:48:30 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:48:30 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:48:31 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 03:48:31 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[25-Jul-2018 03:48:31 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 03:49:53 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:49:53 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:53:05 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:53:05 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:54:39 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:54:39 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 03:54:39 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:54:39 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 03:54:39 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 14:40:25 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 14:40:25 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 14:40:25 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 14:40:26 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 14:40:26 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Jul-2018 15:56:06 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 15:56:06 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 15:58:17 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 15:58:17 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Controllers\Usuarios\Login.php on line 61
+[25-Jul-2018 15:58:18 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 15:58:18 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 2
+[25-Jul-2018 15:58:18 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 6
+[25-Jul-2018 15:58:18 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexDoctor.php on line 42
+[25-Jul-2018 15:58:34 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 15:58:34 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
+[25-Jul-2018 15:58:34 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42

@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 session_start();
 if(!isset($_SESSION['funcionario'])){
-	header('location: '.URL.'Login/iniciarSesion');
+	header('location: '.URL.'Usuarios/Login/iniciarSesion');
 }
 ?>
 <!DOCTYPE html>
@@ -10,9 +10,9 @@ if(!isset($_SESSION['funcionario'])){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 </head>
@@ -20,7 +20,7 @@ if(!isset($_SESSION['funcionario'])){
 	<div class="container-fluid">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-				<a class="inicio" href="<?php echo URL;?>Index/indexRes"><img src="../Imagenes/centro-medico1.png" alt=""></a>
+				<a class="inicio" href="<?php echo URL;?>Usuarios/Index/indexRes"><img src="../Imagenes/centro-medico1.png" alt=""></a>
 			</div>
 		   <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	            <nav>
@@ -41,7 +41,7 @@ if(!isset($_SESSION['funcionario'])){
 						   <li class="dropdown">
 					       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 						    <ul class="dropdown-menu">
-							    <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+							    <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 						    </ul>
 						    </li>
 						</ul>
@@ -87,7 +87,7 @@ if(!isset($_SESSION['funcionario'])){
 			</div>
 		</div>
 	</footer>
-<script src="<?php echo URL;?>Public/JS/jquery-3.1.0.min.js"></script>
-<script src="<?php echo URL;?>Public/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
+<script src="<?php echo URL;?>Assets/JS/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

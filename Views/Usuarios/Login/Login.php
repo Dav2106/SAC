@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
 	<link rel="shortcut icon" href="../favicon.ico" />
-	<script type="text/javascript" src="<?php echo URL;?>Public/JS/validacionesLogin.js"></script>
+	<script type="text/javascript" src="<?php echo URL;?>Assets/JS/validacionesLogin.js"></script>
 </head>
 <body>
 	<div class="panel panel-default" id="titulo">
@@ -25,7 +25,7 @@
     <div class="container">
 	<div class="main row">
 		<div  class="col-xs col-sm-8 col-md-9 col-lg-12"><br><br>
-			<form class="form-horizontal" role="form" method="POST" action="<?php echo URL;?>Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
+			<form class="form-horizontal" role="form" method="POST" action="<?php echo URL;?>Usuarios/Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
 			  <div class="form-group">
 			    <label for="ejemplo_email_3" class="col-lg-4 control-label">Usuario:</label>
 			    <div class="col-lg-4">
@@ -45,7 +45,7 @@
 			        <div class="form-group row">
 			        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					        <a class="btn btn-danger" href="<?php echo URL;?>Login/cambioContra">Olvidé mi contraseña</a>
+					        <a class="btn btn-danger" href="<?php echo URL;?>Usuarios/Login/cambioContra">Olvidé mi contraseña</a>
 					        <button type="submit" class="btn btn-success" id="btnIngresar" style="width: 180px; margin-left: 3%;">Ingresar</button>
 					    </div>
 					</div>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 </footer>
-<script src="<?php echo URL;?>Public/JS/jquery-3.1.0.min.js"></script>
-<script src="<?php echo URL;?>Public/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
+<script src="<?php echo URL;?>Assets/JS/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

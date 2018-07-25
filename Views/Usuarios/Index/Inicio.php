@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/Bootstrap/bootstrap/css/bootstrap.min.css">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text\css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 </head>
@@ -17,7 +17,7 @@
 		   <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	            <nav>
 		            <ul class="nav navbar-nav">
-						 <li class="inicio" ><a href="<?php echo URL;?>Index/index"><img src="..\Imagenes\inicio.jpg" style=" width: 50px; height: 50px;" alt=""></a></li>
+						 <li class="inicio" ><a href="<?php echo URL;?>Usuarios/Index/index"><img src="..\Imagenes\inicio.jpg" style=" width: 50px; height: 50px;" alt=""></a></li>
 			      		<li class="dropdown">
 						    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mantenimiento <b class="caret"></b></a>
 						    <ul class="dropdown-menu">

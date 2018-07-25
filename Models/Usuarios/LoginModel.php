@@ -51,7 +51,7 @@
 				}
       		}else{
       			echo 0;
-         		header('refresh:0;'.URL.'Login/iniciarSesion');
+         		header('refresh:0;'.URL.'Usuarios/Login/iniciarSesion');
       		}
 			return $datos;
 		}

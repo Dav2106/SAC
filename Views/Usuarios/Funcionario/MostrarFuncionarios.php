@@ -1,7 +1,7 @@
 <?php session_set_cookie_params(0,"/");
 	session_start();
   if(!isset($_SESSION['funcionario'])){
-    header('location: '.URL.'Login/iniciarSesion');
+    header('location: '.URL.'Usuarios/Login/iniciarSesion');
   }
 ?>
 <!DOCTYPE>
@@ -11,16 +11,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EMD SYSTEM</title>
 <link rel="shortcut icon" href="../favicon.ico" />
-<link href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="<?php echo URL;?>Public/Bootstrap/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="<?php echo URL;?>Public/Bootstrap/fonts/css/font-awesome.min.css">
+<link href="<?php echo URL;?>Assets/Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo URL;?>Assets/Bootstrap/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="<?php echo URL;?>Assets/Bootstrap/fonts/css/font-awesome.min.css">
 <link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-<script src="<?php echo URL;?>Public/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo URL;?>Assets/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo URL;?>Assets/jquery-1.11.3-jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo URL;?>Public/JS/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="<?php echo URL;?>Public/JS/validacionesFuncionario.js"></script>
+<script type="text/javascript" src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="<?php echo URL;?>Assets/JS/validacionesFuncionario.js"></script>
 <script type="text/javascript" src="<?php echo URL;?>Assets/datatables.min.js"></script>
-<script src="<?php echo URL;?>Public/JS/VerificacionPasswords.js"></script>
+<script src="<?php echo URL;?>Assets/JS/VerificacionPasswords.js"></script>
 </head>
 <body>
     <div class="container-fluid">

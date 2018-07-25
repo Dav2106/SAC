@@ -13,9 +13,9 @@ if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/Bootstrap/bootstrap/css/bootstrap.min.css">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 </head>
@@ -41,7 +41,7 @@ if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
 						   <li class="dropdown">
 					       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
 						    <ul class="dropdown-menu">
-							    <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+							    <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
 						    </ul>
 						    </li>
 						</ul>
@@ -87,7 +87,7 @@ if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
 			</div>
 		</div>
 	</footer>
-<script src="<?php echo URL;?>Public/JS/jquery-3.1.0.min.js"></script>
-<script src="<?php echo URL;?>Public/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
+<script src="<?php echo URL;?>Assets/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
