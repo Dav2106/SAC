@@ -115,9 +115,9 @@ Class Diagnostico extends Controller{
 			unset($_SESSION['lastDgn']);
 			$_SESSION['idLastDgn'] = 0;
 			if($_SESSION['funcionario'] == @$_SESSION['Medico']){
-				header('refresh:0;'.URL.'Agenda/listaEsperaDoc');	
+				header('refresh:0;'.URL.'ExpedienteMedico/Agenda/listaEsperaDoc');	
 			}else{
-				header('refresh:0;'.URL.'Agenda/listaEspera');	
+				header('refresh:0;'.URL.'ExpedienteMedico/Agenda/listaEspera');	
 			}
 			
 		}

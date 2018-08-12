@@ -28,12 +28,12 @@
 			      		<li class="dropdown">
 						    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Factura <b class="caret"></b></a>
 						    <ul class="dropdown-menu">
-						        <li><a href="<?php echo URL;?>Servicio/mostrar">Servicios</a></li>
+						        <li><a href="<?php echo URL;?>Finanzas/Servicio/mostrar">Servicios</a></li>
 						        <li><a href="<?php echo URL;?>Factura/agregar">Comprobante de pago</a></li>
 						     </ul>
 						</li>
 						<li><a href="#">Control Estadistico</a></li>
-						<li><a href="<?php echo URL;?>Reportes/index">Reportes</a></li>
+						<li><a href="<?php echo URL;?>Reportes/Reportes/index">Reportes</a></li>
 					</ul>
 				</nav>	
 			</div>

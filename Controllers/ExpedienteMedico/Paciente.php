@@ -33,9 +33,9 @@
 					'fechaNac' => $fechaNac, 'gender' => $gender, 'lugNa' => $lugNa, 'telefono' => $telefono);
 
 				echo $this->model->agregarPaciente($persona);
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}else{
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}
 		}
 
@@ -61,9 +61,9 @@
 					'fechaNac' => $fechaNac, 'gender' => $gender, 'lugNa' => $lugNa, 'telefono' => $telefono);
 				
 				echo $this->model->modificarPaciente($persona);
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}else{
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}
 		}
 
@@ -73,9 +73,9 @@
 				$id = $_POST['id1'];
 
 				echo $this->model->eliminarPaciente($id);
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}else{
-				header('location:'.URL.'Paciente/mostrar');
+				header('location:'.URL.'ExpedienteMedico/Paciente/mostrar');
 			}
 		}
 

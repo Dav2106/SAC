@@ -1,10 +1,10 @@
 <?php session_set_cookie_params(0,"/");
 session_start();
 if(!isset($_SESSION['funcionario'])){
-	header('refresh:0;'.URL.'Login/iniciarSesion');
+	header('refresh:0;'.URL.'Usuarios/Login/iniciarSesion');
 }
 if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
-	header('location: '.URL.'Index/indexRes');
+	header('location: '.URL.'Usuarios/Index/indexRes');
 }
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
 	<link rel="shortcut icon" href="favicon.ico" />
@@ -28,9 +28,9 @@ if($_SESSION['funcionario'] == @$_SESSION['Recepcionista']){
 		   <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 	            <nav>
 		            <ul class="nav navbar-nav">
-		            	<li><a href="<?php echo URL;?>Agenda/listaEsperaDoc">Lista de espera</a></li>
-			      		<li><a href="<?php echo URL;?>Paciente/mostrar">Pacientes</a></li>
-						<li><a href="<?php echo URL;?>Reportes/index">Reportes</a></li>
+		            	<li><a href="<?php echo URL;?>ExpedienteMedico/Agenda/listaEsperaDoc">Lista de espera</a></li>
+			      		<li><a href="<?php echo URL;?>ExpedienteMedico/Paciente/mostrar">Pacientes</a></li>
+						<li><a href="<?php echo URL;?>Reportes/Reportes/index">Reportes</a></li>
 					</ul>
 				</nav>	
 			</div>

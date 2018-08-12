@@ -2,21 +2,22 @@
 
  Class Agenda extends Controller{
 
+ 	private $modulo = "Agenda";
  	function __construct(){
- 		parent::__construct();
+ 		parent::__construct($this->modulo);
  	}
 
  	public function agenda(){
  		$this->mostrarAgenda();
- 		$this->view->render($this,'Agenda');
+ 		$this->view->render($this->modulo,$this,'Agenda');
  	}
 
  	public function listaEspera(){
- 		$this->view->render($this,'ListaEspera');
+ 		$this->view->render($this->modulo,$this,'ListaEspera');
  	}
 
  	public function listaEsperaDoc(){
- 		$this->view->render($this,'ListaEsperaDoc');
+ 		$this->view->render($this->modulo,$this,'ListaEsperaDoc');
  	}
    
  	public function agregarAgenda(){
@@ -29,9 +30,9 @@
  			$agenda = array("fecha" => $fecha, "tipo" => $tipo, "observacion" => $observacion, "idPac" => $idPac);
 
  			$this->model->agregar($agenda);
- 			header('location:'.URL.'Agenda/agenda');
+ 			header('location:'.URL.'Agenda/Agenda/agenda');
  		}else{
- 			header('location:'.URL.'Agenda/agenda');
+ 			header('location:'.URL.'Agenda/Agenda/agenda');
  		}
  	}
 
@@ -45,7 +46,7 @@
  			$agenda = array("id" => $id, "fecha" => $fecha, "tipo" => $tipo, "observacion" => $observacion, "idPac" => $idPac);
 
  			$this->model->modificar($agenda);
- 			header('location:'.URL.'Agenda/agenda');
+ 			header('location:'.URL.'Agenda/Agenda/agenda');
  	}
 
  	public function eliminarAgenda(){
@@ -53,9 +54,9 @@
  			$id = $_POST['id1'];
 
  			$this->model->eliminar($id);
- 			header('location:'.URL.'Agenda/agenda');
+ 			header('location:'.URL.'Agenda/Agenda/agenda');
  		}else{
- 			header('location:'.URL.'Agenda/agenda');
+ 			header('location:'.URL.'Agenda/Agenda/agenda');
  		}
  	}
 

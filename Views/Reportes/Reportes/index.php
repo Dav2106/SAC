@@ -4,11 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap.min.css">
-	<link href="<?php echo URL;?>Public/Bootstrap/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css">
+	<link href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
 	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Public/CSS/reportes.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/reportes.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -106,8 +106,8 @@
 			</div>
 		</div>	
 	</footer>
-	<script src="<?php echo URL;?>Public/JS/jquery-3.1.0.min.js"></script>
-	<script src="<?php echo URL;?>Public/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
+	<script src="<?php echo URL;?>Assets/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 	$("li").click(function () {  
 	  $('li').removeClass('active');

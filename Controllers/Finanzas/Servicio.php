@@ -19,9 +19,9 @@
 				$costo = $_POST['Costo'];
 				$servicio = array('direccion' => $descripcion, 'Costo' => $costo);
 				echo $this->model->agregarServicio($servicio);
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}else{
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}
 		}
 
@@ -32,9 +32,9 @@
 				$costo = $_POST['Costo1'];
 				$servicio = array('id' => $idServicio, 'direccion' => $descripcion, 'Costo' => $costo);
 				echo $this->model->modificarServicio($servicio);
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}else{
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}
 		}
 
@@ -42,9 +42,9 @@
 			if(isset($_POST['id1'])){
 				$idServicio = $_POST['id1'];
 				echo $this->model->eliminarServicio($idServicio);
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}else{
-				header('refresh:0;'.URL.'Servicio/mostrar');
+				header('refresh:0;'.URL.'Finanzas/Servicio/mostrar');
 			}
 		}
 

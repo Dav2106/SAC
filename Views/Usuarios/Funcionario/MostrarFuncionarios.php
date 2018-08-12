@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EMD SYSTEM</title>
 <link rel="shortcut icon" href="../favicon.ico" />
-<link href="<?php echo URL;?>Assets/Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="<?php echo URL;?>Assets/Bootstrap/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="<?php echo URL;?>Assets/Bootstrap/fonts/css/font-awesome.min.css">
 <link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
@@ -38,7 +38,7 @@
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['funcionario'];?><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                      <li><a href="<?php echo URL;?>Login/CerrarSesion">Cerrar Sesion</a></li>
+                      <li><a href="<?php echo URL;?>Usuarios/Login/CerrarSesion">Cerrar Sesion</a></li>
                   </ul>
                </li>
           </ul>
@@ -99,7 +99,7 @@
         </div>
     </div>
     <div class="container-fluid">
-      <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Index/indexAdm';">Regresar</button>
+      <button class="btn btn-success" onclick="window.location = '<?php echo URL;?>Usuarios/Index/indexAdm';">Regresar</button>
     </div>
                     <!-- Bootstrap modal -->
 <div class="modal fade" id="modal-1" role="dialog">
@@ -110,7 +110,7 @@
             <h3 class="modal-title">Funcionario</h3>
         </div>             
         <div class="modal-body ">
-          <form class="form-group row" action="<?php echo URL;?>Funcionario/AgregarFuncionario" method="POST" onsubmit="return CamposVaciosA()">
+          <form class="form-group row" action="<?php echo URL;?>Usuarios/Funcionario/AgregarFuncionario" method="POST" onsubmit="return CamposVaciosA()">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group row">
                   <label for="example-text-input" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-form-label">Cédula:</label> 

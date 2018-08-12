@@ -26,9 +26,9 @@ if(!isset($_SESSION['funcionario'])){
 	            <nav>
 		            <ul class="nav navbar-nav">
 						<li class="dropdown">
-						    <a href="<?php echo URL;?>Agenda/agenda">Agenda</a>
+						    <a href="<?php echo URL;?>Agenda/Agenda/agenda">Agenda</a>
 						</li>
-						<li><a href="<?php echo URL;?>Agenda/listaEspera">Lista de espera</a></li>
+						<li><a href="<?php echo URL;?>Agenda/Agenda/listaEspera">Lista de espera</a></li>
 			      		<li><a href="<?php echo URL;?>Factura/agregar">Facturar</a>
 						</li>
 					</ul>
