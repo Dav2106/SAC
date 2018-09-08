@@ -1,79 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Login Centro Medico</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>EMD SYS</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/Bootstrap/bootstrap/css/bootstrap.min.css">
-	<link href="<?php echo URL;?>Assets/datatables.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/style.css">
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<script type="text/javascript" src="<?php echo URL;?>Assets/JS/validacionesLogin.js"></script>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/util.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo URL;?>Assets/styles/main_styles.css">
+<!--===============================================================================================-->
+
 </head>
-<body>
-	<div class="panel panel-default" id="titulo">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="form-group">
-				<h1>Inicia Sesión</h1> 	   
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" role="form" method="POST" action="<?php echo URL;?>Usuarios/Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
+					<div class="logo_text">Centro<span>Medico</span></div>
+				  	<br><br>
+					
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="text" name="usuario" id="usuario">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Usuario</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" id="contra" name="contra">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Contraseña</span>
+					</div>
+
+					<div class="flex-sb-m w-full p-t-3 p-b-32">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Recordarme
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								¿Perdi mi contraseña?
+							</a>
+						</div>
+					</div>
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit" id="btnIngresar" >
+							Login
+						</button>
+					</div>
+					
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							or sign up using
+						</span>
+					</div>
+
+					<div class="login100-form-social flex-c-m">
+						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+							<i class="fa fa-facebook-f" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url('<?php echo URL;?>Imagenes/bg-01.jpg');">
+				</div>
 			</div>
 		</div>
 	</div>
- 	<aside class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><br></aside>
-	<div  class="color1 col-xs-12 col-sm-12 col-md-12 col-lg-12" ><br></div>	
- 	<hr class="linea1">
-<div class="container-fluid">
-    <div class="container">
-	<div class="main row">
-		<div  class="col-xs col-sm-8 col-md-9 col-lg-12"><br><br>
-			<form class="form-horizontal" role="form" method="POST" action="<?php echo URL;?>Usuarios/Login/SesionIniciar" id="login" onsubmit="return CamposVacios()">
-			  <div class="form-group">
-			    <label for="ejemplo_email_3" class="col-lg-4 control-label">Usuario:</label>
-			    <div class="col-lg-4">
-			      <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <label for="ejemplo_password_3" class="col-lg-4 control-label">Contraseña</label>
-			    <div class="col-lg-4">
-			      <input type="password" class="form-control" id="contra" name="contra" placeholder="Contraseña">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			   <div class="col-sm-offset-3 col-sm-3">
-			    </div>
-			    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><br>
-			        <div class="form-group row">
-			        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-			        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					        <a class="btn btn-danger" href="<?php echo URL;?>Usuarios/Login/cambioContra">Olvidé mi contraseña</a>
-					        <button type="submit" class="btn btn-success" id="btnIngresar" style="width: 180px; margin-left: 3%;">Ingresar</button>
-					    </div>
-					</div>
-			    </div>
-			  </div>
-			</form>
-		</div>
-	</div>
-</div><br><br>
-<div class="panel panel-default">
-	<br><br><br><br>
-	<div class="main row">
-		<div class ="color1 col-xs-12 col-sm-12 col-md-12 col-lg-12"><br></div>
-		<div class ="color2 col-xs-12 col-sm-12 col-md-12 col-lg-12"><br></div>
-	</div>
-</div>
-</div><br><br><br><br>	
-<footer class="container-fluid color1">
-	<div class="main row">
-		<div class ="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-			<h4>@CentroMedicoNosara</h4>
-		</div>
-		<div class ="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			<h4>Dirección: Ubicado en Nosara contiguo al Gollo</h4>
-		</div>
-	</div>
-</footer>
-<script src="<?php echo URL;?>Assets/JS/jquery-3.1.0.min.js"></script>
-<script src="<?php echo URL;?>Assets/JS/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+	
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="<?php echo URL;?>Assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="<?php echo URL;?>Assets/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="<?php echo URL;?>Assets/JS/main.js"></script>
+
+
+	
+
 </body>
 </html>

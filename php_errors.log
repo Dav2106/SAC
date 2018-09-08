@@ -279,3 +279,7 @@
 [25-Jul-2018 15:58:34 UTC] PHP Warning:  session_start(): open_basedir restriction in effect. File(C:\Windows\TEMP) is not within the allowed path(s): (C:\inetpub\wwwroot) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
 [25-Jul-2018 15:58:34 UTC] PHP Warning:  session_start(): Failed to initialize storage module: files (path: ) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
 [25-Jul-2018 15:58:34 UTC] PHP Notice:  Undefined variable: _SESSION in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 42
+[25-Aug-2018 16:21:42 UTC] PHP Notice:  Undefined index: idLastDgn in C:\inetpub\wwwroot\SAC\Views\ExpedienteMedico\Diagnostico\MostrarDiagnosticoM.php on line 255
+[25-Aug-2018 16:21:43 UTC] PHP Notice:  Undefined variable: datos in C:\inetpub\wwwroot\SAC\Models\ExpedienteMedico\DiagnosticoModel.php on line 84
+[25-Aug-2018 16:21:43 UTC] PHP Notice:  Undefined variable: arreglo in C:\inetpub\wwwroot\SAC\Models\ExpedienteMedico\DiagnosticoModel.php on line 72
+[27-Aug-2018 18:43:04 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(C:\Windows\TEMP) failed: No error (0) in C:\inetpub\wwwroot\SAC\Views\Usuarios\Index\IndexRecep.php on line 2
